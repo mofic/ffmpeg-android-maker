@@ -1,4 +1,4 @@
-name: Compilability check
+name: Build FFmpeg
 on: push
 jobs:
   build:
@@ -23,5 +23,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with: 
-           name: assets-for-download
+           name: ffmpeg
            path: output
